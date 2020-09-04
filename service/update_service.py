@@ -36,7 +36,7 @@ def waitForVersion(sub):
         # check if bytes object or int
         if type(data) is not bytes:
             continue
-        print(data)
+        #  print(data)
         ver = parseVersion(data)
         # When version reg found, version number is returned
         if ver is None:
