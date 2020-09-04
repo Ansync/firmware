@@ -80,7 +80,7 @@ def checkVersions():
         if ver == None:
             print("Error getting version from", board)
             continue
-        actual_version[board] = getVersion(board)
+        actual_version[board] = ver
         if actual_version[board] < expected_version[board]:
             needsUpdate[board] = expected_version[board]
             enterBootloader(board)
