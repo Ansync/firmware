@@ -24,7 +24,7 @@ def parseVersion(msg):
     if arr[0] != reg:
         return None
     # cut off last char "u"
-    ver = arr[1][:-1]
+    #  ver = arr[1][:-1]
     # convert hex string to int
     ver = int(ver, 16)
     return ver
