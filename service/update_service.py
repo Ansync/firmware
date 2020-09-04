@@ -26,7 +26,8 @@ def parseVersion(msg):
     # cut off last char "u"
     #  ver = arr[1][:-1]
     # convert hex string to int
-    ver = int(ver, 16)
+    #  ver = int(ver, 16)
+    ver = int(arr[1], 16)
     return ver
 
 def waitForVersion(sub):
