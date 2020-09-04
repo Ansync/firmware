@@ -15,8 +15,8 @@ def reqVersion(board):
 def parseVersion(msg):
     last = msg[len(msg) - 1]
     # only care about updates
-    if chr(last) != 'u':
-        return None
+    #  if chr(last) != 'u':
+        #  return None
     arr = msg.split(b' ')
     # convert string to bytes string
     reg = bytes(VERSION_R, 'utf-8')
