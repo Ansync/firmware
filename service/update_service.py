@@ -71,9 +71,9 @@ def checkVersions():
     shell.doPull()
     # load json with all board versions
     expected_version = versions.get()
-    actual_version = None
-    upToDate = None
-    needsUpdate = None
+    actual_version = {}
+    upToDate = {}
+    needsUpdate = {}
     for board in expected_version:
         actual_version[board] = getVersion(board)
         if actual_version[board] < expected_version[board]:
