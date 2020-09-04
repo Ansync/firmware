@@ -54,8 +54,10 @@ def getVersion(board):
     try:
         # loop until version received or timeout
         ver = waitForVersion(sub)
-    except:
+    except IOError:
         print("timedout wating for response")
+    except:
+        print("Error getting response")
     else:
         # success
         timeout.stopTimer()
