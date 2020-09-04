@@ -74,7 +74,7 @@ def checkVersions():
     actual_version = None
     upToDate = None
     needsUpdate = None
-    for board in version:
+    for board in expected_version:
         actual_version[board] = getVersion(board)
         if actual_version[board] < expected_version[board]:
             needsUpdate[board] = expected_version[board]
