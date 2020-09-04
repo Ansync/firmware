@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ $# -lt 1 ]; then
+	echo "Need to specify a board"
+	exit 1
+fi
+
 BOARD=$1
 DEVICE_IN=/dev/$BOARD # This is the device to program
 DEVICE_OUT=/dev/$BOARD # This is what the device will be called after programming
