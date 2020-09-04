@@ -79,7 +79,7 @@ def checkVersions():
         ver = getVersion(board)
         if ver == None:
             print("Error getting version from", board)
-            return 1
+            continue
         actual_version[board] = getVersion(board)
         if actual_version[board] < expected_version[board]:
             needsUpdate[board] = expected_version[board]
