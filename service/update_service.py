@@ -59,8 +59,8 @@ def getVersion(board):
         print("timedout wating for response")
     else:
         # success
-        timeout.stopTimer()
         print(board, "version", ver)
+    timeout.stopTimer()
     sub.unsubscribe(board)
     return ver
 
