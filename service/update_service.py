@@ -45,6 +45,8 @@ def waitForVersion(sub):
 
 def getVersion(board):
     # subscribe to board channel
+    # pubsub object does subscribe and listen.
+    # In order to publish use the original redis object.
     sub = r.pubsub()
     sub.subscribe("up/" + board)
     # request version
