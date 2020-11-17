@@ -10,8 +10,8 @@ DEVICE_IN=/dev/$BOARD # This is the device to program
 DEVICE_OUT=/dev/$BOARD # This is what the device will be called after programming
 FILE=bin/$BOARD.bin
 PORT=USB1
-# PROGRAMMER=~/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI
-PROGRAMMER=~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI
+PROGRAMMER=~/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI
+# PROGRAMMER=~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CLI
 
 if [ $# -gt 1 ]; then
 	DEVICE_IN=/dev/$2 # Device will change id after programming
