@@ -33,4 +33,7 @@ def update(board):
 
 # If called as submodule name will be name of this script
 if __name__ == "__main__":
-    update("cabinet")
+    board = 'cabinet'
+    if len(sys.argv) > 1:
+        board = sys.argv[1]
+    update(board)
